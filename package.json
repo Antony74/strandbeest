@@ -1,0 +1,23 @@
+{
+  "name": "p5-live-coding-1",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antony74/p5-live-coding-1.git"
+  },
+  "author": "Antony74",
+  "license": "MIT",
+  "homepage": "https://github.com/Antony74/p5-live-coding-1#readme",
+  "dependencies": {
+    "p5": "^1.6.0",
+    "parcel": "^2.8.3",
+    "prettier": "^2.8.4"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 4
+  }
+}
