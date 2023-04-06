@@ -12,7 +12,6 @@ const intersect = (c0, r0, c1, r1, which) => {
     const p2 = c0.copy().add(dxy.copy().mult(a / d));
     const h = sqrt(r0 * r0 - a * a);
     const rxy = new p5.Vector(-dxy.y * (h / d), dxy.x * (h / d));
-    console.log({dxy, d, a, p2, h, rxy, r0, r1});
     return p2.copy().add(rxy.copy().mult(which));
 };
 
@@ -20,10 +19,14 @@ window.setup = function () {
     createCanvas(1250, 565);
     rectMode(RADIUS);
     ellipseMode(RADIUS);
-    strokeWeight(5);
-    noFill();
+};
 
+window.draw = function () {
     background(255);
+
+    stroke(0);
+    strokeWeight(5);
+    noFill(); 
 
     const c0 = new p5.Vector(200, 200);
     const r0 = 100;
@@ -43,5 +46,3 @@ window.setup = function () {
     fill(0, 255, 0);
     rect(p2.x, p2.y, 5);
 };
-
-window.draw = function () {};
